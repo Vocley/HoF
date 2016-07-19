@@ -1,0 +1,364 @@
+/* Do not remove the comments below. It's the markers used by wiredep to inject
+   sass dependencies when defined in the bower.json of your dependencies */
+
+// bower:scss
+// endbower
+
+/* GLOBAL CSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+a,
+a:-webkit-any-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+ul {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-padding-start: 0px;
+}
+
+/* TOP BANNER */
+.topPopUp {
+    width: 100%;
+    height: 5%;
+    background-color: #6B556C;
+    text-align: center;
+    color: white;
+    padding: 0.5em 0em;
+    & .exitX {
+        float: right;
+        padding-right: 2%;
+        a {
+            color: white;
+        }
+    }
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    clear: both;
+    background-color: #252525;
+    color: white;
+    font-size: 0.8em;
+    .topHeader {
+        padding: 3% 0%;
+    }
+    .midHeader {
+        padding-bottom: 3%;
+    }
+    & a:hover {
+        color: #FA00A8;
+    }
+    .logo {
+        display: inline-block;
+        width: 33%;
+    }
+    .left {
+        float: left;
+        text-align: center;
+    }
+    .right {
+        float: right;
+        text-align: center;
+    }
+    .buttons {
+        display: inline-block;
+        width: 33%;
+        img {
+            display: inline-block;
+        }
+        .flag {
+            max-height: 1em;
+            max-width: 2em;
+            vertical-align: middle;
+        }
+        .choose-country {
+            padding-left: 2%;
+        }       
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            padding: 5%;
+            display: inline-block;
+        }
+    }
+    /* HEADER BOTTOM MENU */
+    .buttons ul li {
+        display: inline-block;
+        padding: 5%;
+        > img {
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: text-bottom;
+        }
+        .hover {
+            display: none;
+        }
+        .no-hover {
+            display: inline-block;
+        }
+        &:hover,
+        &:active {
+            background-color: white;
+            color: black;
+            .hover {
+                display: inline-block;
+            }
+            .no-hover {
+                display: none;
+            }
+        }
+    }
+    /* DROPDOWN STYLING */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        right: 0;
+        top: 100%;
+        position: absolute;
+        background-color: white;
+        padding: 5%;
+        max-width: 1000px;
+        min-width: 300px;
+        width: 90vmin;
+        text-align: left;
+        a,
+        h2 {
+            display: block;
+            margin: 2vmin 0;
+        }
+        a {
+            width: 240px;
+            display: inline-block;
+        }
+        .col1 {
+            display: inline-block;
+            width: 25%;
+            padding: 20px 10px;
+            vertical-align: top;
+            img {
+                width: 100%;
+            }
+        }
+        .col2 {
+            display: inline-block;
+            width: 69%;
+            vertical-align: top;
+            position: relative;
+            .close {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+            .price {
+                float: right;
+            }
+            h3 {
+                margin-top: 5px;
+            }
+        }
+        .sub-total {
+            span {
+                float: right;
+            }
+        }
+        .buttons {
+            text-align: center;
+            width: 100%;
+            a {
+                width: 10%;
+                display: inline-block;
+                min-width: 340px;
+            }
+        }
+    }
+    .bottomLine {
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: solid 1px;
+        &.gray {
+            border-color: gray;
+        }
+        &.light-gray {
+            border-color: #999;
+            color: #999;
+        }
+    }
+    .dropdown:hover .dropdown-content,
+    .dropdown:active .dropdown-content {
+        display: block;
+    }
+    .dropdown-container {
+        padding: 5%;
+    }
+    .checkout,
+    .bag {
+        padding: 4%;
+        border-radius: 50px;
+        white-space: nowrap;        
+    }
+    .bag {
+        background-color: black;
+        color: white;
+    }
+    .checkout {
+        background-color: #ACF500;
+    }
+    .search {
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+        background-color: white;
+        padding: 1em 0em;
+        border-radius: 50px;
+        form {
+            input {
+                border: none;
+                vertical-align: super;
+            }
+            button {
+                border: none;
+                background-color: inherit;
+            }
+        }
+    }
+    .bottomHeader {
+        clear: both;
+        background-color: #ECECEC;
+        height: 10%;
+        width: 100%;
+        color: black;
+        text-align: center;
+        .offers {
+            padding: 2% 0%;
+            display: inline-block;
+            width: 33%;
+        }
+    }
+}
+
+.main {
+    clear: both;
+}
+
+.mainContent {
+    padding-top: 5%;
+    margin: 0 auto;
+    .card {
+        width: 38%;
+        height: 250px;
+        display: inline-block;
+        margin: 5%;
+        background-color: gray;
+    }
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1200px) {
+    .header .buttons {
+        font-size: 1.5em;
+    }
+    .header .dropdown-content .buttons a {
+      font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header .logo,
+    .header .search {
+        width: 60%;
+        margin: 5% 20%;
+    }
+    .header .logo {
+        margin-bottom: 0%;
+    }
+    .header .buttons {
+        width: 49%;
+    }
+    .mainContent .card {
+        width: 100%;
+    }
+    .header .topHeader {
+        padding-bottom: 0;
+    }
+    .main {
+        padding: 10%;
+    }
+    .mainContent .card {
+        margin: 10% 0%;
+    }
+    .header .dropdown-content .buttons a{
+     min-width: 300px;
+     font-size: 1.5em; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header .buttons,
+    input {
+        font-size: 0.8em;
+    }
+    .header .buttons ul li {
+        padding: 2%;
+    }
+    .header .dropdown-content {
+      min-width: 200px;
+    }
+    .header .dropdown-content .col1 {
+      padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header .buttons,
+    p,
+    a,
+    input {
+        font-size: 0.7em;
+    }
+    .header .bottomHeader .offers {
+        width: 100%;
+    }
+    .header .dropdown-content .buttons a {
+      font-size: 2em;
+      min-width: 250px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header .buttons,
+    p,
+    a {
+        font-size: 0.6em;
+    }
+    .header .dropdown-content .buttons a {
+      font-size: 2em;
+      min-width: 200px;
+    }
+}
+
+
+/* Do not remove the comments below. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+
+// injector
+// endinjector

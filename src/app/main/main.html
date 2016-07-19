@@ -1,0 +1,100 @@
+<div class="wrapper">
+    <!-- TOP BANNER -->
+    <div class="topPopUp" ng-if="main.isBannerVisible">
+        <p>See Frasers Magazine for the best picks of Christmas <span class="exitX"><a href="x" ng-click="main.hideBanner()">X</span></a>
+        </p>
+    </div>
+    <div class="header">
+        <div class="topHeader">
+            <!-- STORES AND COUNTRY -->
+            <div class="buttons left">
+                <a href="#">Stores</a>
+                <img src="./assets/images/british-flag.svg" class="flag" alt="uk flag"> <a href="#" class="choose-country">UK
+                <img src="./assets/images/arrow-down.svg" class="flag" alt="arrow down icon"></a>
+            </div>
+            <!-- CONTACT -->
+            <div class="buttons right">
+                <a href="tel:03456021073">0345 602 1073</a> <a href="#">Help</a>
+            </div>
+            <!-- MAIN HoF LOGO -->
+            <div class="logo">
+                <img src="./assets/images/HoF-logo.svg" alt="House of Fraser logo">
+            </div>
+        </div>
+        <div class="midHeader">
+            <!-- SEARCH FORM -->
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Enter product, code or brand...">
+                    <button type="submit">
+                        <img src="./assets/images/search.svg" alt="search icon"></button>
+                </form>
+            </div>
+            <!-- SORTING -->
+            <div class="buttons left ">
+                <ul>
+                    <li>Shop by Department
+                    </li>
+                    <li>Shop by Brand
+                    </li>
+                </ul>
+            </div>
+            <!-- SHOP MENU    -->
+            <div class="buttons right ">
+                <ul>
+                    <li>
+                        <img src="./assets/images/white-login.svg" class="no-hover" alt="white login icon">
+                        <img src="./assets/images/pink-login.svg" class="hover" alt="pink login icon"> Sign in or Register
+                    </li>
+                    <li class="dropdown ">
+                        <img src="./assets/images/white-handbag.svg" class="no-hover" alt="white handbag icon">
+                        <img src="./assets/images/pink-handbag.svg" class="hover" alt="pink handbag icon"> (1) &pound;210
+                        <div class="dropdown-content">
+                            <div class="dropdown-container">
+                                <h2>Bag Summary</h2>
+                                <p class="bottomLine light-gray">Showing 2 of 3 items</p>
+                                <div class="bottomLine gray" ng-if="main.isBannerVisible">
+                                    <div class="col1">
+                                        <img src="./assets/images/dress.png" alt="ralph lauren dress">
+                                    </div>
+                                    <div class="col2 ">
+                                        <img src="./assets/images/close.svg" class="close" ng-click="main.hideBanner()" alt="close icon">
+                                        <h3>1 x Lauren Ralph Lauren</h3>
+                                        <h4>Bella long sleeve sequin dress</h4>
+                                        <p>
+                                            Colour: Gold
+                                            <br /> Size: 12
+                                        </p>
+                                        <span class="price">£210.00</span>
+                                    </div>
+                                </div>
+                                <div class="sub-total bottomLine gray">
+                                    <p>SUB TOTAL<span>£210.00</span></p>
+                                </div>
+                                <div class="buttons">
+                                    <a class="bag">GO TO MY BAG</a>
+                                    <a class="checkout">GO TO SECURE CHECKOUT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- OFFERS -->
+        <div class="bottomHeader ">
+            <div class="offers "><a href="# ">ORDER UNTIL MIDNIGHT<br><span>For Free Buy &amp; Collect delivery</span></a></div>
+            <div class="offers "><a href="# ">EMBRACE YOUR INNER HEELS<br><span>Shop Christmas</span></a></div>
+            <div class="offers "><a href="# ">LOREM IPSUM DOLOR SIT<br><span>Lorem ipsum dolor sit</span></a></div>
+        </div>
+    </div>
+    <!-- MAIN CONTENT -->
+    <div class="main ">
+        <div class="mainContent ">
+            <div class="card "></div>
+            <div class="card "></div>
+            <div class="card "></div>
+            <div class="card "></div>
+        </div>
+    </div>
+</div>
